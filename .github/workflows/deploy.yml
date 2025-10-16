@@ -102,7 +102,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.PREVIEW_DEPLOY_KEY }}
-          external_repository: swhid/swhid.org-preview
+          external_repository: anlambert/swhid.org-preview
           publish_branch: gh-pages
           publish_dir: ./site
           destination_dir: pr-${{ github.event.pull_request.number }}
@@ -120,6 +120,6 @@ jobs:
 
             View this PR’s build at:
 
-            👉 https://swhid.github.io/swhid.org-preview/pr-${{ github.event.pull_request.number }}/
+            👉 https://anlambert.github.io/swhid.org-preview/pr-${{ github.event.pull_request.number }}/
 
             *(Published to separate repository — production at https://www.swhid.org/ is unchanged.)*
